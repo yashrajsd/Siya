@@ -31,7 +31,7 @@ const Date = () => {
         <h1>UMMM WANNA GO OUT ON A DATE WITH ME 3rd April????</h1>
         </div>
         <div>
-            <img src={images[imgIndex]} style={{height:'300px',width:'300px'}}/>
+            <img src={images[imgIndex]} style={{height:'300px',width:'300px'}} alt='Its just an image'/>
         </div>
         <div style={{marginTop:'20px'}}>
             <button style={{ fontSize: `${yesButtonSize}px`,marginRight:'10px'}} onClick={()=>navigate('/thankyou')}>Yes</button>

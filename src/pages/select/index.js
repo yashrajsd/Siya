@@ -38,16 +38,16 @@ const Select = () => {
   const [screenFade, setScreenFade] = useState(false);
 
   const handleSelect=(e,index)=>{
-    if(index==4){
+    if(index===4){
       setAgentSelect(index)
       return;
     }
-    if(agentSelect==index)return;
+    if(agentSelect===index)return;
     setAgentSelect(index)
   }
 
   const handleButton=()=>{
-    if(agentSelect!=4){
+    if(agentSelect!==4){
       alert('please select correct agent for yourself')
     }else{
       // Show second popup with txt2 and audio2
@@ -82,7 +82,7 @@ const Select = () => {
     if (timer < 10) {
       audio.play().catch((error) => console.log(error));
     }
-  }, [timer]);
+  }, [timer,audio]);
 
 
 
@@ -102,7 +102,7 @@ const Select = () => {
     <div style={{height:'100%',width:'10%',display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',gap:'20px'}}>
       <div>
       <div style={{border:'solid 1px lightgray',backgroundColor:'rgba(217,217,217,28%)',height:'90px',width:'90px',}}>
-      <img src={[agents[agentSelect].img]} alt={`${agents[agentSelect].name} image`} style={{height:'100%',width:'100%'}}/>
+      <img src={[agents[agentSelect].img]} alt={agents[agentSelect].name} style={{height:'100%',width:'100%'}}/>
       </div>
       <p style={{margin:'0px',color:'whitesmoke',fontWeight:'regular',textAlign:'left'}}>Siya Mhatre</p>
       </div>
@@ -113,7 +113,7 @@ const Select = () => {
         {agents.map((agent,index)=>{
           return(
             <div key={index} style={{height:'80px',width:'80px',backgroundColor:'rgba(217,217,217,28%)',cursor:'pointer',border:'1px solid white0'}} onClick={(e)=>{handleSelect(e,index)}}>
-              <img src={agent.img} alt={`${agent.name} image`} style={{height:'100%',width:'100%'}}/>
+              <img src={agent.img} alt={agent.name} style={{height:'100%',width:'100%'}}/>
             </div>
           )
         })}
