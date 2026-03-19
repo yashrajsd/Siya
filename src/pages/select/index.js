@@ -21,8 +21,7 @@ const agents=[
   {name:'Sage',img:'https://titles.trackercdn.com/valorant-api/agents/569fdd95-4d10-43ab-ca70-79becc718b46/displayicon.png',select:false},
   {name:'Omen',img:'https://titles.trackercdn.com/valorant-api/agents/8e253930-4c05-31dd-1b6c-968525494517/displayicon.png',select:false},
   {name:'Fade',img:'https://tiermaker.com/images/templates/valorant-agents-fade-15154563/151545631655300856.png',select:false},
-  {name:'Yash',img:Yash,select:false},
-  {name:'Deadlock',img:'https://titles.trackercdn.com/valorant-api/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/displayicon.png',select:false},
+  {name:'Yashraj',img:Yash,select:false},
   {name:'Neon',img:'https://titles.trackercdn.com/valorant-api/agents/bb2a4828-46eb-8cd1-e765-15848195d751/displayicon.png',select:false},
   {name:'Jett',img:'https://titles.trackercdn.com/valorant-api/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayicon.png',select:false},
   {name:'Astra',img:'https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/displayicon.png',select:false}
